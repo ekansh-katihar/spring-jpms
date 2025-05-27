@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Statement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      margin: 40px;
+      color: #000;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header img {
+      height: 40px;
+    }
+
+    .header .print-date {
+      font-size: 10px;
+      color: gray;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .account-holder, .bank-details {
+      width: 48%;
+    }
+
+    .account-summary {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+
+    .activity-image {
+      margin: 20px 0 10px 0;
+      width: 150px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ccc;
+      padding: 6px;
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .caught-up {
+      text-align: center;
+      margin-top: 40px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="logo.svg" alt="TD Logo">
+    <div class="print-date">Printed: May 24, 2025</div>
+  </div>
+
+  <div class="info-section">
+    <div class="account-holder">
+      <strong>MS AMNA PERVEZ</strong><br>
+      145 CELESTIAL GROVE<br>
+      NEPEAN ON CAN K2J 6S8
+    </div>
+
+    <div class="bank-details">
+      <strong>TD Canada Trust</strong><br>
+      1045 BRONTE ST S<br>
+      MILTON ON<br>
+      Tel: (905) 876-2289<br>
+      TTY: 1-800-361-1180
+    </div>
+  </div>
+
+  <div class="account-summary">
+    <strong>Account:</strong> TD ALL-INCLUSIVE BANKING PLAN - 6029884<br>
+    <strong>As of:</strong> May 24, 2025<br>
+    <strong>Current Balance:</strong> $2,103.63<br>
+    <strong>Available Balance:</strong> $1,403.63<br>
+    <strong>Overdraft Limit:</strong> $300.00
+  </div>
+
+  <img src="activity_and_manage.jpg" alt="Activity and Manage" class="activity-image">
+
+  <div class="section-title">Transaction History</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Transaction Description</th>
+        <th class="right">Withdrawals</th>
+        <th class="right">Deposits</th>
+        <th class="right">Balance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>May 21, 2025</td>
+        <td>02831/8054700/01 TRM</td>
+        <td class="right">$0.00</td>
+        <td class="right">$20,000.00</td>
+        <td class="right">$22,893.67</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="caught-up">You're all caught up!</div>
+
+</body>
+</html>
